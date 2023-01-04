@@ -12,6 +12,7 @@ export default function handleRequest(
   const markup = renderToString(<RemixServer context={remixContext} url={request.url} />)
 
   responseHeaders.set('Content-Type', 'text/html')
+  responseHeaders.set('Access-Control-Allow-Origin', '*')
 
   return new Response(`<!DOCTYPE html>${markup}`, {
     status: responseStatusCode,

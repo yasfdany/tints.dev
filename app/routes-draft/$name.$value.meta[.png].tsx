@@ -47,6 +47,7 @@ export const loader: LoaderFunction = async ({request, params}) => {
       'Content-Type': 'image/png',
       'x-content-type-options': 'nosniff',
       'Cache-Control': 'max-age=604800, s-maxage=604800',
+      'Access-Control-Allow-Origin': '*',
     },
   })
 }

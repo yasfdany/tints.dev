@@ -25,6 +25,7 @@ export const loader: LoaderFunction = ({params}) => {
       'Content-Type': 'application/json; charset=utf-8',
       'x-content-type-options': 'nosniff',
       'Cache-Control': 'max-age=604800, s-maxage=604800',
+      'Access-Control-Allow-Origin': '*',
     },
   })
 }
